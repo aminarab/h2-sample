@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ir.amin.h2.sample</groupId>
+	<artifactId>h2-sample</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+	<!--
+ 		<h2database.port>9092</h2database.port>
+		<basedir>D:/run/h2</basedir>
+		<local-h2-directory>/context-switch</local-h2-directory>
+	 -->
+	</properties>
+
+	<dependencies>
+
+		<!-- H2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.199</version>
+		</dependency>
+	</dependencies>
+	<build>
+		 <plugins>
+		<!--	<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<id>h2-server</id>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>org.h2.tools.Server</mainClass>
+					<arguments>
+						Start also UI
+						<argument>-web</argument>
+						db is available via tcp
+						<argument>-tcp</argument>
+						local file is present in project
+						<argument>-baseDir</argument>
+						<argument>${basedir}/${local-h2-directory}</argument>
+						Other computers can connect to this db
+						<argument>-webAllowOthers</argument>
+						<argument>-webPort</argument>
+						<argument>${h2database.port}</argument>
+						uncomment if you want to open h2 UI automatically
+						<argument>-browser</argument>
+					</arguments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.edugility</groupId>
+				<artifactId>h2-maven-plugin</artifactId>
+				<version>1.0</version>
+			</plugin> -->
+		</plugins>
+	</build>
+</project>
